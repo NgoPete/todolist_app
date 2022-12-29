@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 17px;
+}
+#wrapper {
+  max-width: 572px;
+  margin: 0 auto;
+  background: #1e272e;
+  padding: 23px 30px 30px 30px;
+  margin-top: 50px;
+  border-radius: 7px;
+}
+
+#wrapper div#data-form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 482px;
+}
+
+#wrapper input.add-task {
+  max-width: 386px;
+  color: #ff6f6f;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+}
+.add-task {
+  width: 386px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ff6f6f;
+  background: #1e272e;
+  font-size: 20px;
+  font-weight: 400;
+}
+.submit {
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #ff2b2b;
+  color: white;
+}
+#task {
+  margin-top: 40px;
+  min-height: 40px;
+}
+#task div.task-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#task div.task-item span {
+  font-size: 28px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#task div.icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+#task div.icon:hover .edit,
+.delete {
+  transition: all 0.25s ease-in-out;
+}
+#task div.icon i.edit:hover {
+  font-size: 50px;
+  color: #b2f2bb;
+}
+#task div.icon i.delete:hover {
+  font-size: 50px;
+  color: #b2f2bb;
+}
+div.icon i {
+  padding-left: 20px;
+}
+.task-item {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b2f2bb;
+}
+.checked-task {
+  color: #ffe066;
+}
+.task-item[is-complete="true"] span {
+  text-decoration: line-through;
+  color: #676767;
+}
+.comment {
+  color: white;
+}
